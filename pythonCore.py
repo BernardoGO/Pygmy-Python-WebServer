@@ -9,6 +9,8 @@ import StringIO
 import config
 import cookieHandler
 import sessionManager
+import info
+
 from xml.sax.saxutils import escape, unescape
 import codecs
 html_escape_table = {'"': '&quot;',
@@ -22,6 +24,8 @@ def html_escape(text):
 def html_unescape(text):
     return unescape(text, html_unescape_table)
 
+def server_version():
+    return info.__SRV_VERSION__
 
 def replaceAll(self, response, getNpost):
     __GET__ = getNpost[0]

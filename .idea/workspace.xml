@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonCore.py" afterPath="$PROJECT_DIR$/pythonCore.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,8 +95,20 @@
       <file leaf-file-name="pythonCore.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pythonCore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11612903" vertical-offset="0" max-vertical-offset="775">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5225806" vertical-offset="0" max-vertical-offset="900">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#48#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -142,6 +155,8 @@
         <option value="$PROJECT_DIR$/sessionManager.py" />
         <option value="$PROJECT_DIR$/getHandler.py" />
         <option value="$PROJECT_DIR$/postHandler.py" />
+        <option value="$PROJECT_DIR$/www/info.py" />
+        <option value="$PROJECT_DIR$/info.py" />
         <option value="$PROJECT_DIR$/pythonCore.py" />
       </list>
     </option>
@@ -190,6 +205,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="srvpuc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvpuc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvpuc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,7 +375,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419953000525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UTF8">
+      <created>1419959318622</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1419959318622</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +427,8 @@
     </option>
     <MESSAGE value="Force new session" />
     <MESSAGE value="response fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="response fixed" />
+    <MESSAGE value="UTF8" />
+    <option name="LAST_COMMIT_MESSAGE" value="UTF8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -489,11 +525,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pythonCore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11612903" vertical-offset="0" max-vertical-offset="775">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.5225806" vertical-offset="0" max-vertical-offset="900">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#48#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
