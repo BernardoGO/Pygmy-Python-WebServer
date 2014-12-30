@@ -13,6 +13,8 @@ def set(self, key, value):
     _SESSION_[key] = value
     commitSession(self, _SESSION_)
 
+def newSession(self):
+    return startSession(self, True)
 
 def startSession(self, forceStart = False):
     session = readSessionKey(self)
