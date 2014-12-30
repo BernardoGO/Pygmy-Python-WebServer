@@ -24,7 +24,7 @@ def do_GET(self):
     self.send_response(response[0])
     self.send_header('Set-Cookie', cookieHandler.WriteCookie(self, config.__SESSION_COOKIE_NAME__, sessionId))
     self.end_headers()
-    self.wfile.write(response[1] + str(par))
+    self.wfile.write(response[1])
     return
 
 
