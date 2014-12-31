@@ -1,3 +1,5 @@
+import html
+
 __WWW_DIR__ = 'www/'
 __SESSIONS_DIR__ = 'sessions/'
 __INTERNAL_PORT__ = 8012
@@ -10,3 +12,4 @@ __DENIED_EXTENSIONS__ = ['*.exe']
 __MAX_POST_LENGTH__ = 2097152
 __INDEX_PAGE__ = 'index.py'
 __ENABLE_MULTITHREADING__ = True
+__HTML_VER__ = html.HTML5
