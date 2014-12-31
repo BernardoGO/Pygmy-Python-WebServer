@@ -1,4 +1,4 @@
-import html
+from wstypes import HTMLVer
 
 __WWW_DIR__ = 'www/'
 __SESSIONS_DIR__ = 'sessions/'
@@ -12,4 +12,4 @@ __DENIED_EXTENSIONS__ = ['*.exe']
 __MAX_POST_LENGTH__ = 2097152
 __INDEX_PAGE__ = 'index.py'
 __ENABLE_MULTITHREADING__ = True
-__HTML_VER__ = html.HTML5
+__HTML_VER__ = HTMLVer.HTML5
