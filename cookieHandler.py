@@ -22,6 +22,8 @@ def ReadCookie(self, key):
         c = Cookie.SimpleCookie(self.headers['cookie'])
         return str(c[key].value)
 
+def countCookies(self):
+    return len(cookies)
 
 def getCookies(self):
     return cookies
