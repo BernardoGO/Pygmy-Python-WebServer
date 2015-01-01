@@ -3,6 +3,7 @@ import config
 import pythonCore
 import cookieHandler
 import pathManager
+from httpMessages import messages
 
 def read(self, filename, getNpost):
     try:
@@ -11,10 +12,10 @@ def read(self, filename, getNpost):
         filepath = config.__WWW_DIR__ + filename
         allow = pathManager.verify_all(filepath)
         if allow == False:
-            return [503, 'Forbidden']
+            return messages.Forbidden
         file_handler = open(filepath, 'rb')
         response = file_handler.read()
         response = pythonCore.replaceAll(self, response, getNpost)
-        return [200, response]
+        return [messages.Ok[0], response]
     except Exception as e:
-        return [404, 'Not Found' + str(e)]
+        return [messages.NotFound, 'Not Found' + str(e)]
