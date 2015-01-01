@@ -1,11 +1,14 @@
 <%
 import html
+import textStyle
 
-html.InitHTML(self)
+
+
+html.initHTML(self)
 html.beginHead(self)
 html.endHead(self)
 html.beginContent(self)
-html.addTitle(self, "IT WORKS")
+html.addTitle(self, textStyle.italic("IT WORKS"))
 html.endContent(self)
 
 
