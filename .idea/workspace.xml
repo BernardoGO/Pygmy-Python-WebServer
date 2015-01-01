@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textStyle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html.py" afterPath="$PROJECT_DIR$/html.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="srvpuc.iws" />
@@ -58,16 +60,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postHandler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/postHandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="615">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fileHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fileHandler.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +95,21 @@
       <file leaf-file-name="html.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.984252" vertical-offset="0" max-vertical-offset="1305">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.38976377" vertical-offset="543" max-vertical-offset="1305">
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="textStyle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textStyle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,6 +160,7 @@
         <option value="$PROJECT_DIR$/types.py" />
         <option value="$PROJECT_DIR$/wstypes.py" />
         <option value="$PROJECT_DIR$/www/index.py" />
+        <option value="$PROJECT_DIR$/textStyle.py" />
         <option value="$PROJECT_DIR$/html.py" />
       </list>
     </option>
@@ -410,7 +413,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420086469404</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="form and menus">
+      <created>1420086490438</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1420086490438</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,6 +675,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/textStyle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -676,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.984252" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.38976377" vertical-offset="543" max-vertical-offset="1305">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

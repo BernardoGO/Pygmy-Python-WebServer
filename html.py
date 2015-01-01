@@ -60,23 +60,23 @@ def addSubTitle(self,txt,idd="",cssclass=""):
     print "<h2 class=\""+cssclass+"\" id=\""+idd+"\">"+txt+"</h2>"
 
 def beginMenu(self):
-    self.page += "<ul>\n\t"
+    print "<ul>\n\t"
 def menuAddItem(self,txt,idd="",cssclass=""):
-    self.page += "<li id='"+idd+"' class='"+cssclass+"'>"+txt+"</li>\n\t"
+    print "<li id='"+idd+"' class='"+cssclass+"'>"+txt+"</li>\n\t"
 def endMenu(self):
-    self.page += "</ul>\n"
+    print "</ul>\n"
 
 def beginForm(self,name,action="",method="POST"):
-    self.page += "<form name=\""+name+"\" action=\""+action+"\" method=\""+method+"\">\n"
+    print "<form name=\""+name+"\" action=\""+action+"\" method=\""+method+"\">\n"
 def formAddInput(self,inputtype,name="",cssclass="",idd=""):
-    self.page += "<input type=\""+inputtype+"\" name=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\"/>\n"
+    print "<input type=\""+inputtype+"\" name=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\"/>\n"
 def formAddSubmit(self,name,cssclass="",idd=""):
-    self.page += "<input type=\"submit\" value=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\" />\n"
+    print "<input type=\"submit\" value=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\" />\n"
 def endForm(self):
-    self.page += "</form>\n"
+    print "</form>\n"
 
 
 def endContent(self):
     print "</body>\n"
 def endHtml(self):
-	self.page += "</html>"
+	print "</html>"
