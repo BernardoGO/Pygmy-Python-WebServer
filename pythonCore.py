@@ -10,6 +10,8 @@ import config
 import cookieHandler
 import sessionManager
 import info
+import html
+import textStyle
 
 from xml.sax.saxutils import escape, unescape
 import codecs
