@@ -4,7 +4,7 @@ from wstypes import HTMLVer
 
 
 
-def InitHTML(self, htmltype = config.__HTML_VER__):
+def initHTML(self, htmltype = config.__HTML_VER__):
 
     if htmltype == HTMLVer.HTML4:
         print """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >\n"""
@@ -59,5 +59,24 @@ def addTitle(self,txt,idd="",cssclass=""):
 def addSubTitle(self,txt,idd="",cssclass=""):
     print "<h2 class=\""+cssclass+"\" id=\""+idd+"\">"+txt+"</h2>"
 
+def beginMenu(self):
+    self.page += "<ul>\n\t"
+def menuAddItem(self,txt,idd="",cssclass=""):
+    self.page += "<li id='"+idd+"' class='"+cssclass+"'>"+txt+"</li>\n\t"
+def endMenu(self):
+    self.page += "</ul>\n"
+
+def beginForm(self,name,action="",method="POST"):
+    self.page += "<form name=\""+name+"\" action=\""+action+"\" method=\""+method+"\">\n"
+def formAddInput(self,inputtype,name="",cssclass="",idd=""):
+    self.page += "<input type=\""+inputtype+"\" name=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\"/>\n"
+def formAddSubmit(self,name,cssclass="",idd=""):
+    self.page += "<input type=\"submit\" value=\""+name+"\" class=\""+cssclass+"\" id=\""+idd+"\" />\n"
+def endForm(self):
+    self.page += "</form>\n"
+
+
 def endContent(self):
     print "</body>\n"
+def endHtml(self):
+	self.page += "</html>"
