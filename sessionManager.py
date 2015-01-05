@@ -3,6 +3,7 @@ import cookieHandler
 import config
 import random
 import pickle
+import os
 
 def get(self, key):
     return readSession(self)[key]
@@ -75,3 +76,23 @@ def save_obj(obj, name):
 def load_obj(name):
     with open(config.__SESSIONS_DIR__ + str(name) + '.session', 'rb') as f:
         return pickle.load(f)
+
+
+def delete_all_sessions():
+    folder = config.__SESSIONS_DIR__
+    for the_file in os.listdir(folder):
+        file_path = os.path.join(folder, the_file)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+        except Exception, e:
+            print e
+
+def delete_session(key):
+    folder = config.__SESSIONS_DIR__
+    file_path = os.path.join(folder, str(key)+'.session' )
+    try:
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+    except Exception, e:
+        print e

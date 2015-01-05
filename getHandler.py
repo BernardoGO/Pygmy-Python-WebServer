@@ -15,6 +15,7 @@ import posixpath
 import mimetypes
 import urllib
 import urlparse
+import webbrowser, time
 
 def do_GET(self):
     parsed_path = urlparse.urlparse(self.path)
@@ -51,6 +52,16 @@ def guess_typ2e(self, path):
             return self.extensions_map[ext]
         return self.extensions_map['']
 
+def FixURL(string):
+    fix_dict = {' ':'%20','!':'%21','"':'%22','#':'%23','$':'%24',
+                '&':'%26',"'":'%27','(':'%28',')':'%29',
+                '*':'%2A','+':'%2b','.':'%2E','/':'%2F',':':'%3A',
+                ';':'%3B','?':'%3F','@':'%40','{':'%7B','{':'%7D'}
+
+    for k,v in fix_dict.iteritems():
+        if k in string:
+            string = string.replace(k,v)
+    return string
 
 extensions_map = mimetypes.types_map.copy()
 extensions_map.update({'': 'application/octet-stream',

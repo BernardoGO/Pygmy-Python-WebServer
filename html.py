@@ -21,6 +21,9 @@ def initHTML(self, htmltype = config.__HTML_VER__):
 def beginHead(self):
     print "<head>\n"
 
+def setMetaUTF8(self):
+    print '<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />\n'
+
 def setTitle(self,title):
     print "<title>"+title+"</title>\n"
 
