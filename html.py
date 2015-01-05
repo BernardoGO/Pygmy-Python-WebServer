@@ -15,14 +15,24 @@ def initHTML(self, htmltype = config.__HTML_VER__):
 
     else:
         print "ERROR: Function: InitHTML Error: expected HTML4 or HTML5, found "+str(htmltype)+" instead"
-        sys.exit(0)
+        #sys.exit(0)
 
 
 def beginHead(self):
     print "<head>\n"
 
+
 def setMetaUTF8(self):
     print '<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />\n'
+
+
+def addCSS(self, link):
+    print ' <link href="'+link+'" type="text/css" rel="stylesheet" />\n'
+
+
+def addJS(self, link):
+    print ' <link href="'+link+'" type="text/javascript" />\n'
+
 
 def setTitle(self,title):
     print "<title>"+title+"</title>\n"
@@ -46,6 +56,7 @@ def endParagraph(self):
 
 def addBlock(self,idd,name):
     print "<div id='"+idd+"' name='"+name+"'></div>"
+
 def newBlock(self,idd,name="",cssclass=""):
     print "<div id='"+idd+"' class='"+cssclass+"' name='"+name+"'>\n"
 
