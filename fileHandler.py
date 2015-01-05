@@ -1,9 +1,10 @@
 __author__ = 'bernardo'
-import config
+
 import pythonCore
 import cookieHandler
 import pathManager
 from httpMessages import messages
+import config
 
 def read(self, filename, getNpost):
     try:

@@ -17,16 +17,6 @@ import urllib
 import urlparse
 import webbrowser, time
 
-def do_GET(self):
-    parsed_path = urlparse.urlparse(self.path)
-    sessionId = sessionManager.startSession(self)
-    par = urlparse.parse_qs(urlparse.urlparse(self.path).query)
-    response = fileHandler.read(self, parsed_path.path, [par, None])
-    self.send_response(response[0])
-    self.send_header('Set-Cookie', cookieHandler.WriteCookie(self, config.__SESSION_COOKIE_NAME__, sessionId))
-    self.end_headers()
-    self.wfile.write(response[1])
-    return
 
 
 def url_fi2x(s, charset = 'utf-8'):
@@ -41,6 +31,16 @@ def url_fi2x(s, charset = 'utf-8'):
      qs,
      anchor))
 
+def do_GET(self):
+    parsed_path = urlparse.urlparse(self.path)
+    sessionId = sessionManager.startSession(self)
+    par = urlparse.parse_qs(urlparse.urlparse(self.path).query)
+    response = fileHandler.read(self, parsed_path.path, [par, None])
+    self.send_response(response[0])
+    self.send_header('Set-Cookie', cookieHandler.WriteCookie(self, config.__SESSION_COOKIE_NAME__, sessionId))
+    self.end_headers()
+    self.wfile.write(response[1])
+    return
 
 def guess_typ2e(self, path):
     base, ext = posixpath.splitext(path)
