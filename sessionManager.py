@@ -23,9 +23,22 @@ def startSession(self, forceStart = False):
         __SESSION__ = {}
         save_obj(__SESSION__, hash)
         key = hash
+        try:
+            __SESSION__2 = load_obj(key)
+        except:
+            key = startSession(self, True)
+            __SESSION__2 = load_obj(key)
+
     else:
         key = readSessionKey(self)
+        try:
+            __SESSION__2 = load_obj(key)
+        except:
+            key = startSession(self, True)
+            __SESSION__2 = load_obj(key)
+
         __SESSION__ = readSession(self, key)
+
     return key
 
 
@@ -48,7 +61,7 @@ def readSession(self, key = None):
     try:
         __SESSION__2 = load_obj(key)
     except:
-        startSession(self, True)
+        key = startSession(self, True)
         __SESSION__2 = load_obj(key)
 
     return __SESSION__2
