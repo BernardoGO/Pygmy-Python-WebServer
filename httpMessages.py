@@ -10,5 +10,6 @@ class messages:
     BadRequest = [400, "BadRequest"]
     Unauthorized = [401, "Unauthorized"]
     Forbidden = [403, "Forbidden"]
-    NotFound = [404, "NotFound"]
+    NotFound = [404, "NotFound" ]
     InternalError = [500, "InternalError"]
+    NotImplemented = [999, "NotImplemented"]
