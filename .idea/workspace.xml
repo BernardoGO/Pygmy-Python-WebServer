@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/checkFolders.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/pythonCore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileExtensions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/cookieHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/fileHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/getHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/postHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/handlers/requestHandler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/httpMessages.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/info.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/html.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/textStyle.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pathManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sessionManager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/statusCheck.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/support/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/support/multithreadSupport.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urlEncoding.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wstypes.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/__init__.py" afterPath="$PROJECT_DIR$/server/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.py" afterPath="$PROJECT_DIR$/www/index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="" />
     <ignored path="srvpuc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -645,7 +618,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421560390833</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="new modules&#10;">
+      <created>1421561949217</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1421561949217</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -729,7 +708,8 @@
     <MESSAGE value="handlers package get" />
     <MESSAGE value="handlers package" />
     <MESSAGE value="core package" />
-    <option name="LAST_COMMIT_MESSAGE" value="core package" />
+    <MESSAGE value="new modules&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="new modules&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
