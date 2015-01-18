@@ -1,12 +1,9 @@
 __author__ = 'bernardo'
 from BaseHTTPServer import BaseHTTPRequestHandler
-import urlparse
-from cgi import parse_header, parse_multipart
-from urlparse import parse_qs
-from BaseHTTPServer import BaseHTTPRequestHandler
-import config
-import getHandler
+
+from handlers import getHandler
 import postHandler
+
 
 class requestHandler(BaseHTTPRequestHandler):
 
