@@ -1,8 +1,7 @@
 <%
 
-import html
+from page import html, textStyle
 import sessionManager
-import textStyle
 
 html.initHTML(self)
 html.beginHead(self)

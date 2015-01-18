@@ -2,7 +2,7 @@ from BaseHTTPServer import HTTPServer
 
 import config
 from handlers.requestHandler import requestHandler
-import multithreadSupport
+from support import multithreadSupport
 import statusCheck
 
 

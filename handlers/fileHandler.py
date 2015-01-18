@@ -1,7 +1,6 @@
 __author__ = 'bernardo'
 
-import pythonCore
-import cookieHandler
+from core import pythonCore
 import pathManager
 from httpMessages import messages
 import config
