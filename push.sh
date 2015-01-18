@@ -1,3 +1,3 @@
 git add --all
-git commit -m "delete sessions"
+git commit -m "init"
 
