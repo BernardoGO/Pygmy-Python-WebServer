@@ -1,22 +1,10 @@
 __author__ = 'bernardo'
-from BaseHTTPServer import BaseHTTPRequestHandler
-import urlparse
-from cgi import parse_header, parse_multipart
-from urlparse import parse_qs
-from BaseHTTPServer import BaseHTTPRequestHandler
-import config
-import fileHandler
-import cookieHandler
-import Cookie
-import os
-import cgi
-import sessionManager
-import posixpath
 import mimetypes
-import urllib
 import urlparse
-import webbrowser, time
 
+import config
+from handlers import cookieHandler, fileHandler
+import sessionManager
 
 
 def do_GET(self):

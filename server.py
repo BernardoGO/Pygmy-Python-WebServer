@@ -1,17 +1,10 @@
-from BaseHTTPServer import BaseHTTPRequestHandler
-import urlparse
-from cgi import parse_header, parse_multipart
-from urlparse import parse_qs
-from BaseHTTPServer import BaseHTTPRequestHandler
-import checkFolders
-from requestHandler import requestHandler
-import config
-from SocketServer import ThreadingMixIn
-import threading
 from BaseHTTPServer import HTTPServer
-from requestHandler import requestHandler
+
+import config
+from handlers.requestHandler import requestHandler
 import multithreadSupport
 import statusCheck
+
 
 execfile('checkFolders.py')
 

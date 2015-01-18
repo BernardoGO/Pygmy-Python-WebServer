@@ -1,20 +1,13 @@
 # -*- coding: utf-8 -*-
 __author__ = 'bernardo'
-import socket
-import signal
-import time
-import os, sys
+import sys
 import re
 import StringIO
-import config
-import cookieHandler
-import sessionManager
-import info
-import html
-import textStyle
-
 from xml.sax.saxutils import escape, unescape
 import codecs
+
+import info
+
 html_escape_table = {'"': '&quot;',
  "'": '&apos;'}
 html_unescape_table = {v:k for k, v in html_escape_table.items()}

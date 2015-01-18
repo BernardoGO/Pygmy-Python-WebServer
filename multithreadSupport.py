@@ -1,8 +1,6 @@
 __author__ = 'bernardo'
 from SocketServer import ThreadingMixIn
-import threading
 from BaseHTTPServer import HTTPServer
-from requestHandler import requestHandler
 
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):

@@ -1,8 +1,7 @@
 __author__ = 'bernardo'
 from BaseHTTPServer import BaseHTTPRequestHandler
 
-from handlers import getHandler
-import postHandler
+from handlers import getHandler, postHandler
 
 
 class requestHandler(BaseHTTPRequestHandler):

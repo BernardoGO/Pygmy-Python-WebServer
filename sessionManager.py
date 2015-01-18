@@ -1,9 +1,11 @@
 __author__ = 'bernardo'
-import cookieHandler
-import config
 import random
 import pickle
 import os
+
+from handlers import cookieHandler
+import config
+
 
 def get(self, key):
     return readSession(self)[key]
