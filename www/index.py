@@ -2,7 +2,7 @@
 
 import html
 import sessionManager
-
+import textStyle
 
 html.initHTML(self)
 html.beginHead(self)
