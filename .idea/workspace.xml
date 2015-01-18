@@ -1,86 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/101956324309118998754361698653490391505.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/102345025181906096679113628789976562144.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/106552208815277911532989279287467716919.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/109965764804858242835517899660166863690.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/112398094059732364114903287744455550265.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/11371418531888939887916986828938225538.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/117434392454517084830315693618779376424.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/119421046328292658541843243171685386060.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/121548483524839073571965449197999545293.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/124221101184407763070151790349034292153.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/134945841035105828301580276010412837494.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/139131743332269667666361892228821930096.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/144215964715549083769167986484119608665.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/146855625992615258536482862705163788762.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/149844653994150836008590771783223467334.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/1612112449722723319296089854674908987.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/162688290010018904258808407163328281107.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/166237536584311134049993344352936292711.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/170004730577398633376319067650959660636.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/171884507683777753599549366151225334021.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/172591830713728521009555461031063027854.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/172922072100863886687606524181355109179.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/178923125754212752441189543683730852802.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/178988750175073072906156691237384070080.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/18376491327382931428655274242804421376.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/186847734824375645277536729802790864093.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/188385912791746442096746105900503247739.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/194172435231763095817398377865358736703.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/213107827853550169129374971791005162459.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/215659128394370423439347591739908617783.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/219434473499053841410298762237578726101.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/225002470872073866624336449511667582880.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/225678477117467344720252155759050567284.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/22725484328552816894592425281724956638.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/240564139376770633581315578052211684326.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/244030394697196995982902250449149721807.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/248957524217500478282019723075795456090.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/255160458718889063547583797676517931530.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/258676094442482540392504952945189091009.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/264412230610023068117307001324043305056.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/271163791776868238719319626350372673449.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/273544893771475862096991118785752006132.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/277180831463466045265821506042510544021.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/286592168441880921734822872839480405946.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/287663594186516443111498187566378611290.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/291168283156219938791540025855889006723.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/293434485781672706103176815741358907014.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/308970200319544427585140501087099890200.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/311135120135691719727131594696014554447.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/325397192609741105523158211385892476104.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/329795293290879388148833240916591930846.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/332080141217369503760434617138460305477.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/333369372795200461427079874798881601021.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/333727847547189614786443060593575076775.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/335609511820534930075585839019805453971.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/338545561468488645733396841710136436317.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/44817290660074109699660387834826007606.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/44880416030238949993237188400889236268.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/59232085048140390009333274085927205300.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/60296800892869365041101478049725405057.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/61387323455563730977556828528159529083.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/69219527530908688619074519438127553950.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/69866500655057167159103050798405183346.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/72582114927297276037225662609235291462.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/77501241321898321131323821825008417349.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/78161679475571890089624571363162824452.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/83110679657181759981140277933228834561.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/86615715484339848604280240757838834427.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/88500612488212674686616477694210370527.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/88816058227657349984901869084939519477.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/90639420364142430318278120138180058259.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/93377136362716616962998129415821062262.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/96239475997479122153565908138433098953.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sessions/97206721724749150750798793908981958296.session" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handlers/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getHandler.py" afterPath="$PROJECT_DIR$/handlers/getHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requestHandler.py" afterPath="$PROJECT_DIR$/requestHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ec95e190-7921-4a72-8eb7-9025df31bd81" name="Default" comment="" />
     <ignored path="srvpuc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,7 +59,7 @@
       <file leaf-file-name="requestHandler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requestHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27096775" vertical-offset="0" max-vertical-offset="775">
+            <state vertical-scroll-proportion="0.27202073" vertical-offset="0" max-vertical-offset="772">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#24#73#0" expanded="true" />
@@ -673,7 +594,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421474981218</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="handlers package get">
+      <created>1421559497803</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1421559497803</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -703,6 +630,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14462541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -711,7 +639,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -754,7 +681,8 @@
     <MESSAGE value="javascript and css" />
     <MESSAGE value="status, url fix" />
     <MESSAGE value="not implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="not implemented" />
+    <MESSAGE value="handlers package get" />
+    <option name="LAST_COMMIT_MESSAGE" value="handlers package get" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1144,7 +1072,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requestHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27096775" vertical-offset="0" max-vertical-offset="775">
+        <state vertical-scroll-proportion="0.27202073" vertical-offset="0" max-vertical-offset="772">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#24#73#0" expanded="true" />
