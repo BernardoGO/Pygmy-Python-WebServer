@@ -1,4 +1,4 @@
-from wstypes import HTMLVer
+from server.utils.wstypes import HTMLVer
 
 __WWW_DIR__ = 'www/'
 __SESSIONS_DIR__ = 'sessions/'
