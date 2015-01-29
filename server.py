@@ -8,11 +8,6 @@ from server.utils import checkFolders
 
 
 
-#execfile('server/utils/checkFolders.py')
-
-
-
-
 if __name__ == '__main__':
     checkFolders.createIfNotExists()
     if config.__ENABLE_MULTITHREADING__ == False:
