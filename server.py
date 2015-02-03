@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from BaseHTTPServer import HTTPServer
 
 import config
