@@ -10,7 +10,8 @@ def read(self, filename, getNpost):
         if len(filename) < 2:
             filename = config.__INDEX_PAGE__
         filepath = config.__WWW_DIR__ +"/"+  filename
-        print ("filepath: " +filepath)
+        if config.__VERBOSE_MODE__:
+            print ("Requested File: " +filepath)
         allow = pathManager.verify_all(filepath)
         if allow == False:
             return messages.Forbidden
