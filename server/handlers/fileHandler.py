@@ -22,4 +22,4 @@ def read(self, filename, getNpost):
         response = pythonCore.replaceAll(self, response, getNpost)
         return [messages.Ok[0], response]
     except Exception as e:
-        return [messages.NotFound, 'Not Found' + str(e)]
+        return [messages.NotFound[0], 'Not Found' + str(e)]
