@@ -10,6 +10,7 @@ from server.managers import sessionManager
 
 
 def do_GET(self):
+    print("Received GET")
     parsed_path = urlparse.urlparse(self.path)
     sessionId = sessionManager.startSession(self)
     par = urlparse.parse_qs(urlparse.urlparse(self.path).query)

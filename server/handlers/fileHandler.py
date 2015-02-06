@@ -1,4 +1,4 @@
-__author__ = 'bernardo'
+__author__ = 'BernardoGO'
 
 from server.core import pythonCore
 from server.managers import pathManager
@@ -9,7 +9,8 @@ def read(self, filename, getNpost):
     try:
         if len(filename) < 2:
             filename = config.__INDEX_PAGE__
-        filepath = config.__WWW_DIR__ + filename
+        filepath = config.__WWW_DIR__ +"/"+  filename
+        print ("filepath: " +filepath)
         allow = pathManager.verify_all(filepath)
         if allow == False:
             return messages.Forbidden
