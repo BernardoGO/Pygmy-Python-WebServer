@@ -3,6 +3,7 @@ __author__ = 'BernardoGO'
 from server.core import pythonCore
 from server.managers import pathManager
 from server.utils.httpMessages import messages
+from server.utils.bcolors import bcolors
 import config
 
 def read(self, filename, getNpost):
@@ -11,7 +12,8 @@ def read(self, filename, getNpost):
             filename = config.__INDEX_PAGE__
         filepath = config.__WWW_DIR__ +"/"+  filename
         if config.__VERBOSE_MODE__:
-            print ("Requested File: " +filepath)
+
+            print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
         if allow == False:
             return messages.Forbidden
