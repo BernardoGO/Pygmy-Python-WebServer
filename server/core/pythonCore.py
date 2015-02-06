@@ -5,7 +5,9 @@ import re
 import StringIO
 from xml.sax.saxutils import escape, unescape
 import codecs
-
+from server.utils.httpMessages import messages
+import config
+from server.utils.bcolors import bcolors
 from server.utils import info
 
 
@@ -29,6 +31,8 @@ def replaceAll(self, response, getNpost):
     match = re.compile('<%(.+?)%>', flags=re.DOTALL)
     results = match.findall(response)
     response_content = response
+    exception = None
+
     for res in results:
         codeOut = StringIO.StringIO()
         sys.stdout = codeOut
@@ -36,11 +40,15 @@ def replaceAll(self, response, getNpost):
         try:
             exec '# -*- coding: utf-8 -*-\n\r\n\r' + res
         except Exception as e:
-            print str(e)
+            exception = e
 
         sys.stdout = sys.__stdout__
         response2 = codeOut.getvalue()
         response_content = response_content.replace('<%' + res + '%>', response2)
+        if exception != None:
+            response_content = messages.InternalError
+            if config.__VERBOSE_MODE__:
+                print ( bcolors.BACK_LRED+"  --InternalError:\n\t\t" + str(exception) + bcolors.ENDC)
 
     match = re.compile('!%(.+?)%!', flags=re.DOTALL)
     results = match.findall(response)
