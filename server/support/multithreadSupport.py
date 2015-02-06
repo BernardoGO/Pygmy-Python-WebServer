@@ -1,4 +1,4 @@
-__author__ = 'bernardo'
+__author__ = 'bernardogo'
 from SocketServer import ThreadingMixIn
 from BaseHTTPServer import HTTPServer
 
