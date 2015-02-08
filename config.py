@@ -1,11 +1,16 @@
 from server.utils.wstypes import HTMLVer
 import os
+import ConfigParser
+
+configParser = ConfigParser.RawConfigParser()
+configFilePath = r'config.conf'
+configParser.read(configFilePath)
 
 path = os.path.abspath
 
 __WWW_DIR__ = path('../elab/www/')
 __SESSIONS_DIR__ = path('sessions/')
-__INTERNAL_PORT__ = 8013
+__INTERNAL_PORT__ = int(configParser.get('server', 'port'))
 __LISTEN_ADDRESS__ = ''
 __SESSION_COOKIE_NAME__ = 'sessionId'
 __ALLOWED_DIRS__ = []
