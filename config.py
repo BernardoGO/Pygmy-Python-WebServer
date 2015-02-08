@@ -19,7 +19,7 @@ __ALLOWED_DIRS_AND_SUB__ = \
         path('../elab/www/')
     ]
 __ALLOWED_EXTENSIONS__ = []
-__DENIED_EXTENSIONS__ = ['*.exe']
+__DENIED_EXTENSIONS__ = eval(configParser.get('server', 'deniedExtensions'))
 __MAX_POST_LENGTH__ = 2097152
 __INDEX_PAGE__ = 'index.py'
 __ENABLE_MULTITHREADING__ = True
