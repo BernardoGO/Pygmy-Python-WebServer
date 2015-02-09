@@ -47,7 +47,7 @@ def replaceAll(self, response, getNpost):
         response_content = response_content.replace('<%' + res + '%>', response2)
         if exception != None:
             response_content = messages.InternalError
-            if config.__VERBOSE_MODE__:
+            if config.__VERBOSE_MODE__ == True:
                 print ( bcolors.BACK_LRED+"  --InternalError:\n\t\t" + str(exception) + bcolors.ENDC)
 
     match = re.compile('!%(.+?)%!', flags=re.DOTALL)

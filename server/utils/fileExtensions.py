@@ -5,11 +5,13 @@ from server.utils.bcolors import bcolors
 
 def check_denied(filepath):
     if len(config.__DENIED_EXTENSIONS__) < 1:
-        print bcolors.WARNING + "DENIED LIST EMPTY" + bcolors.ENDC
+        if config.__VERBOSE_MODE__ == True:
+            print bcolors.WARNING + "DENIED LIST EMPTY" + bcolors.ENDC
         return True
     for peach in config.__DENIED_EXTENSIONS__:
         if filepath.endswith(peach.replace('*', '')):
-            print bcolors.WARNING + "THE EXT IS NOT ALLOWED" + bcolors.ENDC
+            if config.__VERBOSE_MODE__ == True:
+                print bcolors.WARNING + "THE EXT IS NOT ALLOWED"  + bcolors.ENDC
             return False
 
     return True
@@ -20,5 +22,6 @@ def check_allowed(filepath):
     for peach in config.__ALLOWED_EXTENSIONS__:
         if filepath.endswith(peach.replace('*', '')):
             return True
-    print bcolors.WARNING + "NOT ALLOWED EXTENSION" + bcolors.ENDC
+    if config.__VERBOSE_MODE__ == True:
+        print bcolors.WARNING + "NOT ALLOWED EXTENSION" + bcolors.ENDC
     return False

@@ -11,11 +11,11 @@ def read(self, filename, getNpost):
         if len(filename) < 2:
             filename = config.__INDEX_PAGE__
         filepath = config.__WWW_DIR__ +"/"+  filename
-        if config.__VERBOSE_MODE__:
+        if config.__VERBOSE_MODE__ == True:
             print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
         if allow == False:
-            if config.__VERBOSE_MODE__:
+            if config.__VERBOSE_MODE__ == True:
                 print ( bcolors.BACK_LRED+"  --Forbidden" + bcolors.ENDC)
             return messages.Forbidden
         file_handler = open(filepath, 'rb')
@@ -29,7 +29,7 @@ def read(self, filename, getNpost):
             return [response[0], "InternalError!"]
         return [messages.Ok[0], response]
     except Exception as e:
-        if config.__VERBOSE_MODE__:
+        if config.__VERBOSE_MODE__ == True:
             print ( bcolors.BACK_LRED+"  --Not Found" + bcolors.ENDC)
             print str(e)
         return [messages.NotFound[0], 'Not Found' ]#+ str(e)
