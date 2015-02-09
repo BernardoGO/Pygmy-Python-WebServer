@@ -19,7 +19,7 @@ def read(self, filename, getNpost):
                 print ( bcolors.BACK_LRED+"  --Forbidden" + bcolors.ENDC)
             return messages.Forbidden
         file_handler = open(filepath, 'rb')
-        response = file_handler.read()
+        response = str(file_handler.read().decode('UTF-8'))
         response = pythonCore.replaceAll(self, response, getNpost)
         #print "TYPEEEE: " + str(type(response)) + " " + str(response)
 
@@ -31,5 +31,5 @@ def read(self, filename, getNpost):
     except Exception as e:
         if config.__VERBOSE_MODE__ == True:
             print ( bcolors.BACK_LRED+"  --Not Found" + bcolors.ENDC)
-            print (str(e))
+            print ( "fileHandler: " + str(e))
         return [messages.NotFound[0], 'Not Found' ]#+ str(e)
