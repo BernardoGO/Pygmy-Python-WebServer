@@ -17,6 +17,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action="store_true", default=config.__VERBOSE_MODE__)
     parser.add_argument('-p', action="store", default=config.__INTERNAL_PORT__, type=int)
+    parser.add_argument('--test', action="store_true", default=False)
     parsed = parser.parse_args()
     if config.__ACCEPT_ARGS__ == True:
         config.__VERBOSE_MODE__ = bool(parsed.v)
@@ -32,5 +33,8 @@ if __name__ == '__main__':
                                                        requestHandler)
         #print "MULTI-THREADING: ENABLED"
     statusCheck.printConfigs()
+
     print 'Starting server, use <Ctrl-C> to stop'
-    server.serve_forever()
+
+    if parsed.test == False:
+        server.serve_forever()
