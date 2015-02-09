@@ -1,4 +1,4 @@
-__author__ = 'bernardogo'
+__author__ = 'BernardoGO'
 import config
 from server.utils.bcolors import bcolors
 
@@ -22,6 +22,7 @@ def check_allowed(filepath):
     for peach in config.__ALLOWED_EXTENSIONS__:
         if filepath.endswith(peach.replace('*', '')):
             return True
-    if config.__VERBOSE_MODE__ == True:
-        print (bcolors.WARNING + "NOT ALLOWED EXTENSION" + bcolors.ENDC)
+    else:
+        if config.__VERBOSE_MODE__ == True:
+            print (bcolors.WARNING + "NOT ALLOWED EXTENSION" + bcolors.ENDC)
     return False

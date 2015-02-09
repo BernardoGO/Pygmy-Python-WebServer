@@ -51,7 +51,10 @@ def do_POST(self):
     self.send_response(response[0])
     self.send_header('Set-Cookie', cookieHandler.WriteCookie(self, config.__SESSION_COOKIE_NAME__, sessionId))
     self.end_headers()
-    self.wfile.write(response[1])
+    if sys.version_info >= (3, 0):
+        self.wfile.write(bytes((response[1]), 'UTF-8'))
+    else:
+        self.wfile.write(((response[1])))
     return
 
 
