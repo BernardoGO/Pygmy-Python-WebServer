@@ -2,9 +2,19 @@ from server.managers import sessionManager
 
 __author__ = 'bernardo'
 from cgi import parse_header, parse_multipart
-from urlparse import parse_qs
+
 import mimetypes
-import urlparse
+
+
+
+
+import sys
+if sys.version_info >= (3, 0):
+    from urllib.parse import parse_qs
+    import urllib.parse as urlparse
+else:
+    from urlparse import parse_qs
+    import urlparse
 
 from server.handlers import fileHandler, cookieHandler
 import config

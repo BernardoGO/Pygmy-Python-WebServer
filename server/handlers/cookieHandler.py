@@ -1,9 +1,14 @@
-__author__ = 'bernardo'
+__author__ = 'BernardoGO'
 import os
 import cgi
-import Cookie
+
+
 import sys
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+if sys.version_info >= (3, 0):
+    import http.cookies as Cookie
+else:
+    import Cookie
+
 cookies = []
 
 def ClearCookies(self):

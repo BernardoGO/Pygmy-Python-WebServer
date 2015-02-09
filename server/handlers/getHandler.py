@@ -2,12 +2,18 @@ from server.managers import sessionManager
 
 __author__ = 'bernardo'
 import mimetypes
-import urlparse
 
 import config
 from server.handlers import fileHandler, cookieHandler
 from server.managers import sessionManager
 
+import sys
+if sys.version_info >= (3, 0):
+    from urllib.parse import parse_qs
+    import urllib.parse as urlparse
+else:
+    from urlparse import parse_qs
+    import urlparse
 
 def do_GET(self):
     parsed_path = urlparse.urlparse(self.path)
@@ -17,7 +23,7 @@ def do_GET(self):
     self.send_response(response[0])
     self.send_header('Set-Cookie', cookieHandler.WriteCookie(self, config.__SESSION_COOKIE_NAME__, sessionId))
     self.end_headers()
-    self.wfile.write(response[1])
+    self.wfile.write(bytes(response[1], 'UTF-8'))
     return
 
 

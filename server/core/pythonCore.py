@@ -2,13 +2,19 @@
 __author__ = 'bernardo'
 import sys
 import re
-import StringIO
+
 from xml.sax.saxutils import escape, unescape
 import codecs
 from server.utils.httpMessages import messages
 import config
 from server.utils.bcolors import bcolors
 from server.utils import info
+
+import sys
+if sys.version_info >= (3, 0):
+    from io import StringIO as StringIO
+else:
+    import StringIO
 
 
 html_escape_table = {'"': '&quot;',
@@ -38,7 +44,7 @@ def replaceAll(self, response, getNpost):
         sys.stdout = codeOut
         sys.stdout = codecs.getwriter('UTF-8')(sys.stdout)
         try:
-            exec '# -*- coding: utf-8 -*-\n\r\n\r' + res
+            exec('# -*- coding: utf-8 -*-\n\r\n\r' + res)
         except Exception as e:
             exception = e
 

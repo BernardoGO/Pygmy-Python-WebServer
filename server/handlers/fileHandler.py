@@ -31,5 +31,5 @@ def read(self, filename, getNpost):
     except Exception as e:
         if config.__VERBOSE_MODE__ == True:
             print ( bcolors.BACK_LRED+"  --Not Found" + bcolors.ENDC)
-            print str(e)
+            print (str(e))
         return [messages.NotFound[0], 'Not Found' ]#+ str(e)

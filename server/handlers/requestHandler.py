@@ -5,7 +5,7 @@ from server.handlers import postHandler, getHandler
 
 import sys
 if sys.version_info >= (3, 0):
-    import http.HTTPServer as BaseHTTPRequestHandler
+    from http.server import BaseHTTPRequestHandler, HTTPServer
 else:
     from BaseHTTPServer import BaseHTTPRequestHandler as BaseHTTPRequestHandler
 
