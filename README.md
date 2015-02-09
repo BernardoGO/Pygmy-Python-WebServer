@@ -14,15 +14,21 @@ Run using 'config.conf' configurations
 
 ```bash 
 python server.py
+_or_
+python3 server.py
 ``` 
 ___
 Run using 'config.conf' configurations with arguments
 
 ```bash 
-python server.py -p 8080 -v
+python server.py -p 8080 -ip 127.0.0.1 -v
+_or_
+python3 server.py -p 8080 -ip 127.0.0.1 -v
+
 ``` 
 _<sup> -v for verbose mode</sup>_ <br>
-_<sup> -p PORT to change it's listening port</sup>_
+_<sup> -p PORT to change it's listening port</sup>_ <br>
+_<sup> -ip IP to change it's listening address</sup>_ <br>
 
 ___
 
