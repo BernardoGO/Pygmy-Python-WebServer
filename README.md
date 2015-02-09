@@ -21,8 +21,9 @@ Run using 'config.conf' configurations with arguments
 ```bash 
 python server.py -p 8080 -v
 ``` 
-_<sup>* -v for verbose mode</sup>_
-_<sup>* -p PORT to change it's listening port</sup>_
+_<sup> -v for verbose mode</sup>_ <br>
+_<sup> -p PORT to change it's listening port</sup>_
+
 ___
 
 
