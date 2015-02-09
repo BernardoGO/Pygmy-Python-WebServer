@@ -1,8 +1,13 @@
 __author__ = 'bernardo'
-from BaseHTTPServer import BaseHTTPRequestHandler
+
 
 from server.handlers import postHandler, getHandler
 
+import sys
+if sys.version_info >= (3, 0):
+    import http.HTTPServer as BaseHTTPRequestHandler
+else:
+    from BaseHTTPServer import BaseHTTPRequestHandler as BaseHTTPRequestHandler
 
 class requestHandler(BaseHTTPRequestHandler):
 

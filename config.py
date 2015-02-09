@@ -1,6 +1,12 @@
 from server.utils.wstypes import HTMLVer
 import os
-import ConfigParser
+
+
+import sys
+if sys.version_info >= (3, 0):
+    import configparser as ConfigParser
+else:
+    import ConfigParser
 
 configParser = ConfigParser.RawConfigParser()
 configFilePath = r'config.conf'

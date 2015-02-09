@@ -24,8 +24,8 @@ def delete_all_sessions():
         try:
             if os.path.isfile(file_path):
                 os.unlink(file_path)
-        except Exception, e:
-            print e
+        except Exception as e:
+            print (e)
 
 def delete_session(key):
     folder = config.__SESSIONS_DIR__
@@ -33,8 +33,8 @@ def delete_session(key):
     try:
         if os.path.isfile(file_path):
             os.unlink(file_path)
-    except Exception, e:
-        print e
+    except Exception as e:
+        print (e)
 
 
 def newSession(self):

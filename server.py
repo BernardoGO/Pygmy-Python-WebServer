@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from BaseHTTPServer import HTTPServer
+
 
 import config
 from server.handlers.requestHandler import requestHandler
@@ -9,6 +9,12 @@ from server.support import multithreadSupport
 from server.utils import statusCheck
 from server.utils import checkFolders
 import argparse
+
+import sys
+if sys.version_info >= (3, 0):
+    import http.server as http
+else:
+    from BaseHTTPServer import HTTPServer as http
 
 
 
@@ -26,7 +32,7 @@ if __name__ == '__main__':
 
     checkFolders.createIfNotExists()
     if config.__ENABLE_MULTITHREADING__ == False:
-        server = HTTPServer((config.__LISTEN_ADDRESS__, config.__INTERNAL_PORT__), requestHandler)
+        server = http((config.__LISTEN_ADDRESS__, config.__INTERNAL_PORT__), requestHandler)
         #print "MULTI-THREADING: DISABLED"
     else:
         server = multithreadSupport.ThreadedHTTPServer((config.__LISTEN_ADDRESS__, config.__INTERNAL_PORT__),
@@ -34,7 +40,7 @@ if __name__ == '__main__':
         #print "MULTI-THREADING: ENABLED"
     statusCheck.printConfigs()
 
-    print 'Starting server, use <Ctrl-C> to stop'
+    print('Starting server, use <Ctrl-C> to stop')
 
     if parsed.test == False:
         server.serve_forever()
