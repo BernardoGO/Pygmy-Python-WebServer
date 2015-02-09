@@ -18,7 +18,6 @@ else: __LISTEN_ADDRESS__ = ""
 __SESSION_COOKIE_NAME__ = getc('server', 'sessionCookieName')
 __ALLOWED_DIRS__ = eval(getc('folders', 'allowedDirs'))
 __ALLOWED_DIRS_AND_SUB__ = [path(x) for x in eval(getc('folders', 'allowedDirsAndSubdirs'))]
-print "ALLOWER: " + str(__ALLOWED_DIRS_AND_SUB__)
 __ALLOWED_EXTENSIONS__ = eval(getc('files', 'allowedExtensions'))
 __DENIED_EXTENSIONS__ = eval(getc('files', 'deniedExtensions'))
 __MAX_POST_LENGTH__ = getc('files', 'maxPostLength')
@@ -26,3 +25,4 @@ __INDEX_PAGE__ = getc('files', 'indexPage')
 __ENABLE_MULTITHREADING__ = getc('server', 'enableMultithreading')
 __HTML_VER__ = eval( "HTMLVer." + getc('server', 'htmlVersion') )
 __VERBOSE_MODE__ = getc('server', 'enableVerboseMode')
+__ACCEPT_ARGS__ = False
