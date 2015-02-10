@@ -24,6 +24,21 @@ try:
     sessionManager.set(self, 'haha', __GET__['haha'][0])
 except Exception as e:
     print "exp " + str(e) + "-)"
+
+<!-- PERL USAGE -->
+<pl%
+
+use area qw( areaOfCircle );
+
+$areaOfFirstCircle = areaOfCircle(5);
+print "The area of the circle is: $areaOfFirstCircle <br>";
+
+
+print "Hello world of Perl command line". "<br>";
+print "Hello world of Perl command line2";
+%pl>
+
+
 html.beginForm(self, "form2")
 html.formAddInput(self, "text")
 html.formAddSubmit(self, "manda")
@@ -31,5 +46,8 @@ html.endForm(self)
 
 html.endContent(self)
 html.endHtml(self)
+
+
+
 
 %>

@@ -54,29 +54,37 @@ def replaceAll(self, response, getNpost):
 
         sys.stdout = sys.__stdout__
         response2 = codeOut.getvalue()
-        response_content = response_content.replace('<%' + res + '%>', response2)
+        response_content = response_content.replace('<%' + res + '%>',
+                                                    response2)
         if exception != None:
             response_content = messages.InternalError
             if config.__VERBOSE_MODE__ == True:
-                print ( bcolors.BACK_LRED+"  --InternalError:\n\t\t" + str(exception) + bcolors.ENDC)
+
+                print ( bcolors.BACK_LRED+ \
+                        "  --InternalError:\n\t\t" + str(exception) + \
+                        bcolors.ENDC)
 
 
-
-
-
-    match = re.compile('<!(.+?)!>', flags=re.DOTALL)
+    match = re.compile('<pl%(.+?)%pl>',
+                       flags=re.DOTALL)
     results = match.findall(response)
-    #p = subprocess.Popen(["perl", "-I/home/bernardo/projects/elab/www/ -e 'print \"xx\";'"], stdout=subprocess.PIPE)
+
     perlUseLib = "use lib '"+config.__WWW_DIR__+"';"
     for res in results:
 
-        p = subprocess.Popen(["perl", "-e "+perlUseLib +res+""], stdout=subprocess.PIPE)
+        p = subprocess.Popen(["perl", "-e "+perlUseLib +res+""],
+                             stdout=subprocess.PIPE)
         out, err = p.communicate()
-        response_content = response_content.replace('<!' +  res + '!>', str(out.decode('UTF-8')))
+        response_content = response_content.replace('<pl%' +  res + '%pl>',
+                                                    str(out.decode('UTF-8')))
 
-    match = re.compile('!%(.+?)%!', flags=re.DOTALL)
+    match = re.compile('!%(.+?)%!',
+                       flags=re.DOTALL)
+
     results = match.findall(response)
+
     for res in results:
-        response_content = response_content.replace('!%' + res + '%!', eval(res))
+        response_content = response_content.replace('!%' + res + '%!',
+                                                    eval(res))
 
     return response_content
