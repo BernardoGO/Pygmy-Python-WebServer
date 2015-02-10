@@ -9,6 +9,8 @@ from server.utils.httpMessages import messages
 import config
 from server.utils.bcolors import bcolors
 from server.utils import info
+from subprocess import Popen, PIPE
+import subprocess
 
 import sys
 if sys.version_info >= (3, 0):
@@ -48,6 +50,8 @@ def replaceAll(self, response, getNpost):
         except Exception as e:
             exception = e
 
+
+
         sys.stdout = sys.__stdout__
         response2 = codeOut.getvalue()
         response_content = response_content.replace('<%' + res + '%>', response2)
@@ -55,6 +59,20 @@ def replaceAll(self, response, getNpost):
             response_content = messages.InternalError
             if config.__VERBOSE_MODE__ == True:
                 print ( bcolors.BACK_LRED+"  --InternalError:\n\t\t" + str(exception) + bcolors.ENDC)
+
+
+
+
+
+    match = re.compile('<!(.+?)!>', flags=re.DOTALL)
+    results = match.findall(response)
+    #p = subprocess.Popen(["perl", "-I/home/bernardo/projects/elab/www/ -e 'print \"xx\";'"], stdout=subprocess.PIPE)
+    perlUseLib = "use lib '"+config.__WWW_DIR__+"';"
+    for res in results:
+
+        p = subprocess.Popen(["perl", "-e "+perlUseLib +res+""], stdout=subprocess.PIPE)
+        out, err = p.communicate()
+        response_content = response_content.replace('<!' +  res + '!>', str(out.decode('UTF-8')))
 
     match = re.compile('!%(.+?)%!', flags=re.DOTALL)
     results = match.findall(response)
