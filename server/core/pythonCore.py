@@ -78,6 +78,9 @@ def replaceAll(self, response, getNpost):
         response_content = response_content.replace('<pl%' +  res + '%pl>',
                                                     str(out.decode('UTF-8')))
 
+
+
+
     match = re.compile('!%(.+?)%!',
                        flags=re.DOTALL)
 
