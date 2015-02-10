@@ -18,7 +18,7 @@ def set(self, key, value):
 
 
 def delete_all_sessions():
-    folder = config.__SESSIONS_DIR__
+    folder = config.__SESSIONS_DIR__+"/"
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
         try:
@@ -28,7 +28,7 @@ def delete_all_sessions():
             print (e)
 
 def delete_session(key):
-    folder = config.__SESSIONS_DIR__
+    folder = config.__SESSIONS_DIR__+"/"
     file_path = os.path.join(folder, str(key)+'.session' )
     try:
         if os.path.isfile(file_path):
@@ -92,10 +92,10 @@ def readSession(self, key = None):
 
 
 def save_obj(obj, name):
-    with open(config.__SESSIONS_DIR__ + str(name) + '.session', 'wb') as f:
+    with open(config.__SESSIONS_DIR__+"/" + str(name) + '.session', 'wb') as f:
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 
 def load_obj(name):
-    with open(config.__SESSIONS_DIR__ + str(name) + '.session', 'rb') as f:
+    with open(config.__SESSIONS_DIR__+"/" + str(name) + '.session', 'rb') as f:
         return pickle.load(f)

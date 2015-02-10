@@ -26,7 +26,7 @@ def do_GET(self):
     if sys.version_info >= (3, 0):
         self.wfile.write(bytes((response[1]), 'UTF-8'))
     else:
-        self.wfile.write(((response[1])))
+        self.wfile.write(response[1])
     return
 
 

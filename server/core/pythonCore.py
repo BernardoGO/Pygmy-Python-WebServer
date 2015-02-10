@@ -14,9 +14,9 @@ import subprocess
 
 import sys
 if sys.version_info >= (3, 0):
-    from io import StringIO as StringIO
+    import io as strIO
 else:
-    import StringIO
+    import StringIO as strIO
 
 
 html_escape_table = {'"': '&quot;',
@@ -42,7 +42,12 @@ def replaceAll(self, response, getNpost):
     exception = None
 
     for res in results:
-        codeOut = StringIO.StringIO()
+
+        if sys.version_info >= (3, 0):
+            codeOut = strIO.BytesIO()
+        else:
+            codeOut = strIO.StringIO()
+
         sys.stdout = codeOut
         sys.stdout = codecs.getwriter('UTF-8')(sys.stdout)
         try:
@@ -54,8 +59,10 @@ def replaceAll(self, response, getNpost):
 
         sys.stdout = sys.__stdout__
         response2 = codeOut.getvalue()
+        if sys.version_info >= (3, 0):
+            response2 = response2.decode('UTF-8')
         response_content = response_content.replace('<%' + res + '%>',
-                                                    response2)
+                                                    str(response2))
         if exception != None:
             response_content = messages.InternalError
             if config.__VERBOSE_MODE__ == True:

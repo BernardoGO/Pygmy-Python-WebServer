@@ -14,15 +14,19 @@ Run using 'config.conf' configurations
 
 ```bash 
 python server.py
+```
 _or_
+```bash
 python3 server.py
 ``` 
 ___
 Run using 'config.conf' configurations with arguments
 
-```bash 
+```bash
 python server.py -p 8080 -ip 127.0.0.1 -v
+```
 _or_
+```bash
 python3 server.py -p 8080 -ip 127.0.0.1 -v
 
 ``` 

@@ -5,6 +5,7 @@ from server.managers import pathManager
 from server.utils.httpMessages import messages
 from server.utils.bcolors import bcolors
 import config
+import sys
 
 def read(self, filename, getNpost):
     try:
@@ -19,7 +20,13 @@ def read(self, filename, getNpost):
                 print ( bcolors.BACK_LRED+"  --Forbidden" + bcolors.ENDC)
             return messages.Forbidden
         file_handler = open(filepath, 'rb')
-        response = str(file_handler.read().decode('UTF-8'))
+
+        readVal = file_handler.read()
+
+        if sys.version_info >= (3, 0):
+            readVal = readVal.decode('UTF-8')
+
+        response = str(readVal)
         response = pythonCore.replaceAll(self, response, getNpost)
         #print "TYPEEEE: " + str(type(response)) + " " + str(response)
 
