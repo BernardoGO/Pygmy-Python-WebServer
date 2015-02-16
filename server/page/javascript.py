@@ -22,6 +22,14 @@ def redirect(self, link):
     print('window.location.href = \"'+link+'\";')
     endScript(self)
 
+
+
+def isIE(self, link):
+    initState = began
+    beginScript(self)
+    print('var isIE = /*@cc_on!@*/false;')
+    endScript(self)
+
 def alert(self, text):
     initState = began
     beginScript(self)
