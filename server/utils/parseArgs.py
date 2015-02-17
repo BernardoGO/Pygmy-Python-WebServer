@@ -12,6 +12,8 @@ def parseAll():
     parser.add_argument('-p', action="store", default=config.__INTERNAL_PORT__, type=int)
     parser.add_argument('-ip', action="store", default=config.__LISTEN_ADDRESS__, type=str)
     parser.add_argument('--test', action="store_true", default=False)
+    parser.add_argument('--ver', action="store_true", default=False)
+
     parsed = parser.parse_args()
     if config.__ACCEPT_ARGS__ == True:
         config.__VERBOSE_MODE__ = bool(parsed.v)

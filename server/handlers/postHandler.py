@@ -1,6 +1,6 @@
 from server.managers import sessionManager
 
-__author__ = 'bernardo'
+__author__ = 'BernardoGO'
 from cgi import parse_header, parse_multipart
 
 import mimetypes

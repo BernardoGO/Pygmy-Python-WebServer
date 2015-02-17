@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+__author__ = 'BernardoGO'
 
 
 import config
+from server.utils import info
 from server.handlers.requestHandler import requestHandler
 from server.support import multithreadSupport
 from server.utils import statusCheck
@@ -17,10 +18,7 @@ if sys.version_info >= (3, 0):
 else:
     from BaseHTTPServer import HTTPServer as http
 
-
-
-if __name__ == '__main__':
-
+def main():
     parseArgs.parseAll()
 
     checkFolders.createIfNotExists()
@@ -31,7 +29,16 @@ if __name__ == '__main__':
                                                        requestHandler)
     statusCheck.printConfigs()
 
-    print('Starting server, use <Ctrl-C> to stop')
+
+    if parseArgs.parsed.ver == True:
+        print ("Server Version: "+str(info.__SRV_VERSION__))
+        return
 
     if parseArgs.parsed.test == False:
+        print('Starting server, use <Ctrl-C> to stop')
         server.serve_forever()
+
+if __name__ == '__main__':
+    main()
+
+

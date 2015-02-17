@@ -28,11 +28,8 @@ def read(self, filename, getNpost):
 
         response = str(readVal)
         response = pythonCore.replaceAll(self, response, getNpost)
-        #print "TYPEEEE: " + str(type(response)) + " " + str(response)
 
         if isinstance(response, list):
-            #if config.__VERBOSE_MODE__:
-            #    print ( bcolors.BACK_LRED+"  --InternalError" + bcolors.ENDC)
             return [response[0], "InternalError!"]
         return [messages.Ok[0], response]
     except Exception as e:
