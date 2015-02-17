@@ -22,7 +22,11 @@ def redirect(self, link):
     print('window.location.href = \"'+link+'\";')
     endScript(self)
 
-
+def checkForDOM(self, link):
+    initState = began
+    beginScript(self)
+    print('function isDom(){return (document.getElementById&&document.getElementsByTagName&&document.createElement)?true:false}')
+    endScript(self)
 
 def isIE(self, link):
     initState = began
