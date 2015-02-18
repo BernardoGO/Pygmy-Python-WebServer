@@ -90,6 +90,13 @@ def endForm(self):
     print ("</form>\n")
 
 
+def beginOL(self):
+    print ("<ol>\n\t")
+
+def beginOL(self):
+    print ("</ol>\n\t")
+
+
 def endContent(self):
     print ("</body>\n")
 def endHtml(self):
