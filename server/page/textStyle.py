@@ -24,6 +24,12 @@ def mark(text):
     return __addMeta("mark", text)
 def deleted(txt):
     return __addMeta("del", txt)
+def ins(txt):
+    return __addMeta("ins", txt)
+def deleted(txt):
+    return __addMeta("del", txt)
+def deleted(txt):
+    return __addMeta("del", txt)
 
 def underline(txt):
 	txt = txt.replace("\n","<br />")
