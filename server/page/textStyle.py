@@ -25,3 +25,6 @@ def li(txt):
 
 def ol(txt):
     return __addMeta("ol", txt)
+
+def ul(txt):
+    return __addMeta("ul", txt)
