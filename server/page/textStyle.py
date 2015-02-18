@@ -9,7 +9,7 @@ def __addMeta(meta, text):
 def bold(txt):
 	txt = txt.replace("\n","<br />")
 	return "<strong>"+txt+"</strong>"
-def italic(txt):
+def emphasized(txt):
 	txt = txt.replace("\n","<br />")
 	return "<em>"+txt+"</em>"
 
