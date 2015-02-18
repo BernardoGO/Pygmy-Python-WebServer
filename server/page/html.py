@@ -92,8 +92,7 @@ def endForm(self):
 
 def beginOL(self):
     print ("<ol>\n\t")
-
-def beginOL(self):
+def endOL(self):
     print ("</ol>\n\t")
 
 
