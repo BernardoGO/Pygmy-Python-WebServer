@@ -14,3 +14,7 @@ def underline(txt):
 def link(txt,to,idd="",cssclass=""):
 	txt = txt.replace("\n","<br />")
 	return "<a href='"+to+"' id='"+idd+"' class='"+cssclass+"'>"+txt+"</a>"
+
+def li(txt):
+	txt = txt.replace("\n","<br />")
+	return "<li>"+txt+"</li>"
