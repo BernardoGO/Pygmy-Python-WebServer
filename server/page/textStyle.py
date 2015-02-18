@@ -1,5 +1,8 @@
 __author__ = 'bernardo'
 
+def __addMeta(meta, text):
+    return "<" + meta + ">" + text + "</" + meta + ">"
+
 
 
 def bold(txt):
@@ -18,3 +21,4 @@ def link(txt,to,idd="",cssclass=""):
 def li(txt):
 	txt = txt.replace("\n","<br />")
 	return "<li>"+txt+"</li>"
+
