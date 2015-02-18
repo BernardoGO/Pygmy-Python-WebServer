@@ -26,8 +26,8 @@ def deleted(txt):
     return __addMeta("del", txt)
 def ins(txt):
     return __addMeta("ins", txt)
-def deleted(txt):
-    return __addMeta("del", txt)
+def sub(txt):
+    return __addMeta("sub", txt)
 def deleted(txt):
     return __addMeta("del", txt)
 
