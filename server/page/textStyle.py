@@ -12,6 +12,10 @@ def bold(txt):
 def italic(txt):
 	txt = txt.replace("\n","<br />")
 	return "<em>"+txt+"</em>"
+
+def b(txt):
+    return __addMeta("b", txt)
+
 def underline(txt):
 	txt = txt.replace("\n","<br />")
 	return "<u>"+txt+"</u>"
