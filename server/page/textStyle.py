@@ -20,16 +20,26 @@ def i(txt):
 
 def small(text):
     return __addMeta("small", text)
+
+#The HTML <mark> element defines marked or highlighted text:
 def mark(text):
     return __addMeta("mark", text)
+
+#The HTML <del> element defines deleted (removed) of text.
 def deleted(txt):
     return __addMeta("del", txt)
+
+#The HTML <ins> element defines inserted (added) text.
 def ins(txt):
     return __addMeta("ins", txt)
+
+#The HTML <sub> element defines subscripted text.
 def sub(txt):
     return __addMeta("sub", txt)
-def deleted(txt):
-    return __addMeta("del", txt)
+
+#The HTML <sup> element defines superscripted text.
+def sup(txt):
+    return __addMeta("sup", txt)
 
 def underline(txt):
 	txt = txt.replace("\n","<br />")
