@@ -20,6 +20,8 @@ def i(txt):
 
 def small(text):
     return __addMeta("small", text)
+def mark(text):
+    return __addMeta("mark", text)
 
 
 def underline(txt):
