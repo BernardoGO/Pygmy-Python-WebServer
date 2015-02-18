@@ -22,7 +22,8 @@ def small(text):
     return __addMeta("small", text)
 def mark(text):
     return __addMeta("mark", text)
-
+def deleted(txt):
+    return __addMeta("del", txt)
 
 def underline(txt):
 	txt = txt.replace("\n","<br />")
