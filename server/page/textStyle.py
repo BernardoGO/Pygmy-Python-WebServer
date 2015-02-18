@@ -18,6 +18,8 @@ def b(txt):
 def i(txt):
     return __addMeta("i", txt)
 
+def small(text):
+    return __addMeta("small", text)
 
 
 def underline(txt):
