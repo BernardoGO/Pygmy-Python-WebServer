@@ -15,6 +15,10 @@ def italic(txt):
 
 def b(txt):
     return __addMeta("b", txt)
+def i(txt):
+    return __addMeta("i", txt)
+
+
 
 def underline(txt):
 	txt = txt.replace("\n","<br />")
