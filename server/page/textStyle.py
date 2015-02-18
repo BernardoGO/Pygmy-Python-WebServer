@@ -1,6 +1,7 @@
 __author__ = 'bernardo'
 
 def __addMeta(meta, text):
+    text = text.replace("\n","<br />")
     return "<" + meta + ">" + text + "</" + meta + ">"
 
 
@@ -22,3 +23,5 @@ def li(txt):
 	txt = txt.replace("\n","<br />")
 	return "<li>"+txt+"</li>"
 
+def ol(txt):
+    return __addMeta("ol", txt)
