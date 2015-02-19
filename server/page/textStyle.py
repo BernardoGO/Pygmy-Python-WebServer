@@ -62,3 +62,7 @@ def ol(txt):
 
 def ul(txt):
     return __addMeta("ul", txt)
+
+
+def h1(txt):
+    return __addMeta("h1", txt)
