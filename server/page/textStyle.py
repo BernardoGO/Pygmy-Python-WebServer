@@ -13,6 +13,10 @@ def emphasized(txt):
 	txt = txt.replace("\n","<br />")
 	return "<em>"+txt+"</em>"
 
+def p(txt):
+    return __addMeta("p", txt)
+
+
 def b(txt):
     return __addMeta("b", txt)
 def i(txt):
