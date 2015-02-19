@@ -68,3 +68,5 @@ def h1(txt):
     return __addMeta("h1", txt)
 def h2(txt):
     return __addMeta("h2", txt)
+def h3(txt):
+    return __addMeta("h3", txt)
