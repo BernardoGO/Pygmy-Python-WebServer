@@ -15,7 +15,8 @@ def emphasized(txt):
 
 def p(txt):
     return __addMeta("p", txt)
-
+def span(txt):
+    return __addMeta("span", txt)
 
 def b(txt):
     return __addMeta("b", txt)
