@@ -36,6 +36,11 @@ def server_version():
 def replaceAll(self, response, getNpost):
     __GET__ = getNpost[0]
     __POST__ = getNpost[1]
+
+    requests = []
+    requests.extend(__GET__)
+    requests.extend(__POST__)
+
     match = re.compile('<%(.+?)%>', flags=re.DOTALL)
     results = match.findall(response)
     response_content = response
