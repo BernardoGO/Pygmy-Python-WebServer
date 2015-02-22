@@ -11,6 +11,8 @@ def read(self, filename, getNpost):
     try:
         if len(filename) < 2:
             filename = config.__INDEX_PAGE__
+        if "ping.tst" in filename:
+            return [messages.Ok[0], "OK"]
         filepath = config.__WWW_DIR__ +"/"+  filename
         if config.__VERBOSE_MODE__ == True:
             print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
