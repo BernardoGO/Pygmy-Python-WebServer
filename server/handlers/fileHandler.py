@@ -4,6 +4,7 @@ from server.core import pythonCore
 from server.managers import pathManager
 from server.utils.httpMessages import messages
 from server.utils.bcolors import bcolors
+from server.handlers import errorHandler
 import config
 import sys
 
@@ -14,8 +15,10 @@ def read(self, filename, getNpost):
         if "ping.tst" in filename:
             return [messages.Ok[0], "OK"]
         filepath = config.__WWW_DIR__ +"/"+  filename
-        if config.__VERBOSE_MODE__ == True:
-            print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
+        filepath = filepath.replace( "//", "/")
+        errorHandler.handle("Requested File: " +filepath, color=bcolors.BACK_LRED)
+        #if config.__VERBOSE_MODE__ == True:
+        #    print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
         if allow == False:
             if config.__VERBOSE_MODE__ == True:
