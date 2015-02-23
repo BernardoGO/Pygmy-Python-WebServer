@@ -18,7 +18,7 @@ def read(self, filename, getNpost):
             return [messages.Ok[0], "OK"]
         filepath = config.__WWW_DIR__ +"/"+  filename
         filepath = filepath.replace( "//", "/")
-        errorHandler.handle("Requested File: " +filepath, color=bcolors.OKGREEN)
+        errorHandler.handle("Requested File: " +filepath, color=bcolors.OKGREEN, level = 2)
         #if config.__VERBOSE_MODE__ == True:
         #    print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
