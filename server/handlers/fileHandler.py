@@ -23,8 +23,7 @@ def read(self, filename, getNpost):
         #    print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
         if allow == False:
-            if config.__VERBOSE_MODE__ == True:
-                print ( bcolors.BACK_LRED+"  --Forbidden" + bcolors.ENDC)
+            errorHandler.handle("  --Forbidden: "  +filepath, color=bcolors.BACK_LRED, level = 8)
             return messages.Forbidden
         file_handler = open(filepath, 'rb')
 
@@ -40,8 +39,9 @@ def read(self, filename, getNpost):
             return [response[0], "InternalError!"]
         return [messages.Ok[0], response]
     except Exception as e:
+
+        errorHandler.handle("  --Not Found: "  +filepath, color=bcolors.BACK_LRED, level = 7)
+        errorHandler.handle("    fileHandler: " + str(e), color=bcolors.ENDC, level = 7)
         if config.__VERBOSE_MODE__ == True:
-            print ( bcolors.BACK_LRED+"  --Not Found" + bcolors.ENDC)
-            print ( "fileHandler: " + str(e))
             traceback.print_exc()
         return [messages.NotFound[0], 'Not Found' ]#+ str(e)
