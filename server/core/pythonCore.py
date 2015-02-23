@@ -38,8 +38,10 @@ def replaceAll(self, response, getNpost):
     __POST__ = getNpost[1]
 
     requests = []
-    requests.extend(__GET__)
-    requests.extend(__POST__)
+    if __GET__ is not None:
+        requests.extend(__GET__)
+    if __POST__ is not None:
+        requests.extend(__POST__)
 
     match = re.compile('<%(.+?)%>', flags=re.DOTALL)
     results = match.findall(response)

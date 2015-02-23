@@ -5,6 +5,8 @@ from server.managers import pathManager
 from server.utils.httpMessages import messages
 from server.utils.bcolors import bcolors
 from server.handlers import errorHandler
+import traceback
+
 import config
 import sys
 
@@ -16,7 +18,7 @@ def read(self, filename, getNpost):
             return [messages.Ok[0], "OK"]
         filepath = config.__WWW_DIR__ +"/"+  filename
         filepath = filepath.replace( "//", "/")
-        errorHandler.handle("Requested File: " +filepath, color=bcolors.BACK_LRED)
+        errorHandler.handle("Requested File: " +filepath, color=bcolors.OKGREEN)
         #if config.__VERBOSE_MODE__ == True:
         #    print ( bcolors.OKGREEN+"Requested File: " +filepath + bcolors.ENDC)
         allow = pathManager.verify_all(filepath)
@@ -41,4 +43,5 @@ def read(self, filename, getNpost):
         if config.__VERBOSE_MODE__ == True:
             print ( bcolors.BACK_LRED+"  --Not Found" + bcolors.ENDC)
             print ( "fileHandler: " + str(e))
+            traceback.print_exc()
         return [messages.NotFound[0], 'Not Found' ]#+ str(e)
