@@ -3,6 +3,7 @@ __author__ = 'bernardo'
 import sys
 import re
 
+from server.handlers import errorHandler
 from xml.sax.saxutils import escape, unescape
 import codecs
 from server.utils.httpMessages import messages
@@ -72,11 +73,8 @@ def replaceAll(self, response, getNpost):
                                                     str(response2))
         if exception != None:
             response_content = messages.InternalError
-            if config.__VERBOSE_MODE__ == True:
+            errorHandler.handle("  --InternalError:\n\t\t" + str(exception), color=bcolors.BACK_LRED, level = 9)
 
-                print ( bcolors.BACK_LRED+ \
-                        "  --InternalError:\n\t\t" + str(exception) + \
-                        bcolors.ENDC)
 
 
     match = re.compile('<pl%(.+?)%pl>',
