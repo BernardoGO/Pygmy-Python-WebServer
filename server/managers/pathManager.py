@@ -3,7 +3,7 @@ import os.path
 from server.utils.bcolors import bcolors
 import config
 from server.utils import fileExtensions
-
+from server.handlers import errorHandler
 
 def in_directory(file, directory):
     directory = os.path.join(os.path.realpath(directory), '')
@@ -19,7 +19,8 @@ def is_directory(file, directory):
 
 def verify_in_directory(file):
     if len(config.__ALLOWED_DIRS_AND_SUB__) < 1:
-        print (bcolors.WARNING + "THERE IS NO ALLOWED DIRs AND SUBs" + bcolors.ENDC)
+        #print (bcolors.WARNING + "THERE IS NO ALLOWED DIRs AND SUBs" + bcolors.ENDC)
+        errorHandler.handle("THERE IS NO ALLOWED DIRs AND SUBs", color=bcolors.WARNING, level = 4)
         return False
     for koopa in config.__ALLOWED_DIRS_AND_SUB__:
         if in_directory(file, koopa) == False:
