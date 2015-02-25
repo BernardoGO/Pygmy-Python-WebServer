@@ -24,7 +24,7 @@ def verify_in_directory(file):
         return False
     for koopa in config.__ALLOWED_DIRS_AND_SUB__:
         if in_directory(file, koopa) == False:
-            print (bcolors.WARNING + "THIS FOLDER IS NOT IN THE ALLOWED LIST" + bcolors.ENDC)
+            errorHandler.handle("THIS FOLDER IS NOT IN THE ALLOWED LIST FOR SUBs", color=bcolors.WARNING, level = 8)
             return False
 
     return True
@@ -32,11 +32,11 @@ def verify_in_directory(file):
 
 def verify_is_directory(file):
     if len(config.__ALLOWED_DIRS__) < 1:
-        print (bcolors.WARNING + "THERE IS NO ALLOWED DIRs" + bcolors.ENDC)
+        errorHandler.handle("THERE IS NO ALLOWED DIRs", color=bcolors.WARNING, level = 4)
         return False
     for koopa in config.__ALLOWED_DIRS__:
         if is_directory(file, koopa) == False:
-            print (bcolors.WARNING + "THIS FOLDER IS NOT IN THE ALLOWED LIST" + bcolors.ENDC)
+            errorHandler.handle("THIS FOLDER IS NOT IN THE ALLOWED LIST", color=bcolors.WARNING, level = 8)
             return False
 
     return True
