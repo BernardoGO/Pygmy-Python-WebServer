@@ -1,4 +1,4 @@
-# Woma Python WebServer
+# Pygmy Python WebServer
 
 [![Build Status](https://travis-ci.org/BernardoGO/Woma-Python-WebServer.svg?branch=master)](https://travis-ci.org/BernardoGO/Woma-Python-WebServer)
 [![Latest release](http://img.shields.io/github/release/bernardogo/Woma-Python-WebServer.svg?style=flat)](https://github.com/bernardogo/Woma-Python-WebServer/releases)
@@ -48,8 +48,7 @@ This software needs the following dependencies to work:
 
 
 ## Name
-Aspidites ramsayi, commonly known as Ramsay's python, woma python, and sand python, is a species of snake endemic to Australia. Once common throughout Western Australia, it has become critically endangered in some regions.
-Considered to be more active than many pythons, as well as being a very docile and "easy to handle" snake, the woma is highly sought after in the reptile and exotic pet trade. They are one of the hardiest python species in captivity, often readily accepting pre-killed rodents. Although it is considered to be an endangered species, mainly due to the destruction of its natural habitat, this snake will breed in captivity. [read more](http://en.wikipedia.org/wiki/Aspidites_ramsayi)
+Antaresia perthensis is a species of snake found in western Australia. Their common names, pygmy python and anthill python, refer to the fact that they are the smallest member of the Pythonidae family and are often found in termite mounds. In captivity Anthill pythons can be housed (and bred) in something as small as a 5.5 gallon tank. Although reptile specific enclosures are best, a simple fish tank may be used for short or long-term housing. They may be fed mice as part of their regular diet and supplemented with fuzzy rats. This snake is a popular exotic pet. [read more](http://en.wikipedia.org/wiki/Antaresia_perthensis)
 
 License
 -------
