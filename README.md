@@ -1,6 +1,6 @@
 # Pygmy Python WebServer
 
-[![Build Status](https://travis-ci.org/BernardoGO/Woma-Python-WebServer.svg?branch=master)](https://travis-ci.org/BernardoGO/Woma-Python-WebServer)
+[![Build Status](https://travis-ci.org/BernardoGO/Pygmy-Python-WebServer.svg?branch=master)](https://travis-ci.org/BernardoGO/Pygmy-Python-WebServer)
 [![Latest release](http://img.shields.io/github/release/bernardogo/Pygmy-Python-WebServer.svg?style=flat)](https://github.com/bernardogo/Pygmy-Python-WebServer/releases)
 ![Licence](https://img.shields.io/badge/licence-MIT-red.svg?style=flat)
 
