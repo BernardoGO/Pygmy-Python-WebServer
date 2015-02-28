@@ -11,5 +11,5 @@ def handle(message, color = bcolors.FAIL, level=5):
 
     if config.__LOG_ERRORS__ == True:
         f = open('errors.log', 'a')
-        f.write(message)
+        f.write(message + "\n")
         f.close()
