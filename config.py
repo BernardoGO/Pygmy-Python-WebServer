@@ -32,3 +32,4 @@ __ENABLE_MULTITHREADING__ = eval(getc('server', 'enableMultithreading'))
 __HTML_VER__ = eval( "HTMLVer." + getc('server', 'htmlVersion') )
 __VERBOSE_MODE__ = eval(getc('server', 'enableVerboseMode'))
 __ACCEPT_ARGS__ = eval(getc('server', 'acceptArgs'))
+__LOG_ERRORS__ = True
