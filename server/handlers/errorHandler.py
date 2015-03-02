@@ -7,13 +7,22 @@ import datetime
 #level = 0-10
 
 def handle(message, color = bcolors.FAIL, level=5):
+    args = message, color = bcolors.FAIL, level
     datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    printOnScreen(args)
 
-    if config.__VERBOSE_MODE__ == True:
-        print (bcolors.OKBLUE + datew  + ":  "+ bcolors.ENDC \
-               + color+ message + bcolors.ENDC)
 
     if config.__LOG_ERRORS__ == True:
         f = open('errors.log', 'a')
         f.write(message + "\n")
         f.close()
+
+
+def printOnScreen(message, color = bcolors.FAIL, level=5, datew = None):
+
+    if datew is None:
+        datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    if config.__VERBOSE_MODE__ == True:
+        print (bcolors.OKBLUE + datew  + ":  "+ bcolors.ENDC \
+               + color+ message + bcolors.ENDC)
