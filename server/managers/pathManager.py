@@ -19,7 +19,6 @@ def is_directory(file, directory):
 
 def verify_in_directory(file):
     if len(config.__ALLOWED_DIRS_AND_SUB__) < 1:
-        #print (bcolors.WARNING + "THERE IS NO ALLOWED DIRs AND SUBs" + bcolors.ENDC)
         errorHandler.handle("THERE IS NO ALLOWED DIRs AND SUBs", color=bcolors.WARNING, level = 4)
         return False
     for koopa in config.__ALLOWED_DIRS_AND_SUB__:
