@@ -7,9 +7,9 @@ import datetime
 #level = 0-10
 
 def handle(message, color = bcolors.FAIL, level=5):
-    args = message, color = bcolors.FAIL, level
+
     datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    printOnScreen(args)
+    printOnScreen(message, color = bcolors.FAIL, level=level, datew=datew)
 
 
     if config.__LOG_ERRORS__ == True:
