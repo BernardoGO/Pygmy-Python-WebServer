@@ -9,7 +9,10 @@ import datetime
 def handle(message, color = bcolors.FAIL, level=5):
 
     datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    printOnScreen(message, color = bcolors.FAIL, level=level, datew=datew)
+
+    args = message, bcolors.FAIL, level, datew
+
+    printOnScreen(*args)
 
 
     if config.__LOG_ERRORS__ == True:
