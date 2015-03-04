@@ -34,5 +34,5 @@ def printOnFile(message, color = bcolors.FAIL, level=5, datew = None):
 
     if config.__LOG_ERRORS__ == True:
         f = open('errors.log', 'a')
-        f.write(message + "\n")
+        f.write(datew  + ":  " + message + "\n")
         f.close()
