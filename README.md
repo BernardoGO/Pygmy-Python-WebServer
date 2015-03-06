@@ -45,7 +45,7 @@ git clone https://github.com/BernardoGO/Pygmy-Python-WebServer
 
 This software needs the following dependencies to work:
 * [argparse](https://pypi.python.org/pypi/argparse)
-* [argparse](https://pypi.python.org/pypi/psutil)
+
 
 ## Name
 Antaresia perthensis is a species of snake found in western Australia. Their common names, pygmy python and anthill python, refer to the fact that they are the smallest member of the Pythonidae family and are often found in termite mounds. In captivity Anthill pythons can be housed (and bred) in something as small as a 5.5 gallon tank. Although reptile specific enclosures are best, a simple fish tank may be used for short or long-term housing. They may be fed mice as part of their regular diet and supplemented with fuzzy rats. This snake is a popular exotic pet. [read more](http://en.wikipedia.org/wiki/Antaresia_perthensis)
