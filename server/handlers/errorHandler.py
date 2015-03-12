@@ -19,6 +19,9 @@ def handle(message, color = bcolors.FAIL, level=5):
 
 def printOnScreen(message, color = bcolors.FAIL, level=5, datew = None):
 
+    if level > config.__VERBOSE_LEVEL__:
+        return
+
     if datew is None:
         datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -28,6 +31,9 @@ def printOnScreen(message, color = bcolors.FAIL, level=5, datew = None):
 
 
 def printOnFile(message, color = bcolors.FAIL, level=5, datew = None):
+
+    if level > config.__LOG_LEVEL__:
+        return
 
     if datew is None:
         datew = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
