@@ -30,9 +30,8 @@ __MAX_POST_LENGTH__ = getc('files', 'maxPostLength')
 __INDEX_PAGE__ = getc('files', 'indexPage')
 __ENABLE_MULTITHREADING__ = eval(getc('server', 'enableMultithreading'))
 __HTML_VER__ = eval( "HTMLVer." + getc('server', 'htmlVersion') )
-__VERBOSE_MODE__ = eval(getc('server', 'enableVerboseMode'))
+__VERBOSE_MODE__ = eval(getc('debug', 'enableVerboseMode'))
 __ACCEPT_ARGS__ = eval(getc('server', 'acceptArgs'))
-__LOG_ERRORS__ = eval(getc('server', 'enableErrorLogging'))
-
-__LOG_LEVEL__ = 10
-__VERBOSE_LEVEL__ = 10
+__LOG_ERRORS__ = eval(getc('debug', 'enableErrorLogging'))
+__LOG_LEVEL__ = eval(getc('debug', 'errorLoggingLevel'))
+__VERBOSE_LEVEL__ = eval(getc('debug', 'verboseModeLevel'))
