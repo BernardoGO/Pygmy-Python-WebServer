@@ -34,3 +34,5 @@ __VERBOSE_MODE__ = eval(getc('server', 'enableVerboseMode'))
 __ACCEPT_ARGS__ = eval(getc('server', 'acceptArgs'))
 __LOG_ERRORS__ = eval(getc('server', 'enableErrorLogging'))
 
+__LOG_LEVEL__ = 0
+__VERBOSE_LEVEL__ = 0
