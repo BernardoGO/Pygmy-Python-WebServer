@@ -4,7 +4,7 @@ import config
 from server.utils.bcolors import bcolors
 import datetime
 
-#level = 0-10
+#level = 0-10 where 0 is the most important
 
 def handle(message, color = bcolors.FAIL, level=5):
 

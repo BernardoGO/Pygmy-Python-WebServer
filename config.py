@@ -33,3 +33,4 @@ __HTML_VER__ = eval( "HTMLVer." + getc('server', 'htmlVersion') )
 __VERBOSE_MODE__ = eval(getc('server', 'enableVerboseMode'))
 __ACCEPT_ARGS__ = eval(getc('server', 'acceptArgs'))
 __LOG_ERRORS__ = eval(getc('server', 'enableErrorLogging'))
+
