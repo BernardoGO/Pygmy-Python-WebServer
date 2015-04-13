@@ -35,7 +35,7 @@ def main():
         return
 
     if parseArgs.parsed.test == False:
-        print('Starting server, use <Ctrl-C> to stop')
+        print('Starting server, use <Ctrl-C> to stop\nStarted.')
         server.serve_forever()
 
 if __name__ == '__main__':
